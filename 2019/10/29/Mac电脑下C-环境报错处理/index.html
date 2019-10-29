@@ -19,13 +19,15 @@
 <meta property="og:description" content="这是一篇关于Mac电脑环境搭建问题的文章">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https:&#x2F;&#x2F;deepsnow.top&#x2F;images&#x2F;og_image.png">
-<meta property="og:updated_time" content="2019-10-29T05:09:59.383Z">
+<meta property="og:updated_time" content="2019-10-29T06:32:03.089Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;deepsnow.top&#x2F;images&#x2F;og_image.png">
 
 
 
 
+
+<link rel="alternative" href="/atom.xml" title="Mac电脑下C++环境报错处理" type="application/atom+xml">
 
 
 
@@ -107,6 +109,10 @@
             <div class="navbar-end">
                 
                 
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
                 
                 <a class="navbar-item search" title="搜索" href="javascript:;">
                     <i class="fas fa-search"></i>
@@ -155,11 +161,11 @@
 <a id="more"></a>
 
 <h1 id="Mac电脑下C-环境报错处理"><a href="#Mac电脑下C-环境报错处理" class="headerlink" title="Mac电脑下C++环境报错处理"></a>Mac电脑下C++环境报错处理</h1><p>mac电脑一直是我的生产力工具，除了玩游戏的任何其他事情我都是在mac上完成的，从MacBook Air更换到MacBook Pro之后我遇到了如下问题：每次编译Cpp文件的时候都会提示<code>iostream</code>头文件不存在,提示如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/include/stdint.h:2:10: error: #include nested too deeply</span><br><span class="line"></span><br><span class="line">    #include &lt;stddef.h&gt;</span><br><span class="line"></span><br><span class="line">             ^</span><br><span class="line"></span><br><span class="line">    /usr/local/include/stdint.h:59:11: error: #include nested too deeply</span><br><span class="line"></span><br><span class="line">    # include &lt;stdint.h&gt;</span><br><span class="line"></span><br><span class="line">              ^</span><br><span class="line"></span><br><span class="line">    /usr/local/include/stdint.h:72:11: error: #include nested too deeply</span><br><span class="line"></span><br><span class="line">    # include &lt;sys/types.h&gt;</span><br><span class="line"></span><br><span class="line">              ^</span><br><span class="line"></span><br><span class="line">    /usr/local/include/stdint.h:76:10: error: #include nested too deeply</span><br><span class="line"></span><br><span class="line">    #include &lt;limits.h&gt;</span><br><span class="line"></span><br><span class="line">             ^</span><br><span class="line"></span><br><span class="line">    /usr/local/include/stdint.h:82:11: error: #include nested too deeply</span><br><span class="line"></span><br><span class="line">    # include &lt;inttypes.h&gt;</span><br><span class="line"></span><br><span class="line">              ^</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/include/stdint.h:2:10: error: #include nested too deeply</span><br><span class="line"></span><br><span class="line">    #include &lt;stddef.h&gt;</span><br><span class="line"></span><br><span class="line">             ^</span><br><span class="line"></span><br><span class="line">    /usr/local/include/stdint.h:59:11: error: #include nested too deeply</span><br><span class="line"></span><br><span class="line">    # include &lt;stdint.h&gt;</span><br><span class="line"></span><br><span class="line">              ^</span><br><span class="line"></span><br><span class="line">    /usr/local/include/stdint.h:72:11: error: #include nested too deeply</span><br><span class="line"></span><br><span class="line">    # include &lt;sys/types.h&gt;</span><br><span class="line"></span><br><span class="line">              ^</span><br><span class="line"></span><br><span class="line">    /usr/local/include/stdint.h:76:10: error: #include nested too deeply</span><br><span class="line"></span><br><span class="line">    #include &lt;limits.h&gt;</span><br><span class="line"></span><br><span class="line">             ^</span><br><span class="line"></span><br><span class="line">    /usr/local/include/stdint.h:82:11: error: #include nested too deeply</span><br><span class="line"></span><br><span class="line">    # include &lt;inttypes.h&gt;</span><br><span class="line"></span><br><span class="line">              ^</span><br></pre></td></tr></table></figure>
 
 <p>遇到这样的情况我是真的头大，在网上找了各种各样的办法，有重装xcode的，有安装xcode command line工具的··· 反正我都试过了，没一个起作用的。最后实在没办法，搜了一下关于<code>stdint.h</code>文件的相关知识，发现其关联文件会导致头文件失效的情况出现，于是乎解决办法来了。</p>
 <h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><p>依次在终端里键入以下命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">brew unlink libunistring</span><br><span class="line">brew uninstall libunistring</span><br><span class="line">sudo rm /usr/local/include/stdint.h</span><br><span class="line">brew install libunistring</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">brew unlink libunistring</span><br><span class="line">brew uninstall libunistring</span><br><span class="line">sudo rm /usr/local/include/stdint.h</span><br><span class="line">brew install libunistring</span><br></pre></td></tr></table></figure>
 
 <p>ok,这样一来不管是xcode还是vscode还是coderunner都能正常编译运行cpp辣。</p>
 
@@ -236,23 +242,20 @@
     <div class="card-content">
         <h3 class="title is-5 has-text-weight-normal">评论</h3>
         
+<div id="valine-thread" class="content"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 <script>
-    var disqus_config = function () {
-        this.page.url = 'https://deepsnow.top/2019/10/29/Mac%E7%94%B5%E8%84%91%E4%B8%8BC-%E7%8E%AF%E5%A2%83%E6%8A%A5%E9%94%99%E5%A4%84%E7%90%86/';
-        this.page.identifier = '2019/10/29/Mac电脑下C-环境报错处理/';
-    };
-    (function() {
-        var d = document, s = d.createElement('script');  
-        s.src = '//' + '不能为空' + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
+    new Valine({
+        el: '#valine-thread' ,
+        notify: true,
+        verify: true,
+        app_id: 'TND7eL9lxXF8Cd3TeWShhYq1-gzGzoHsz',
+        app_key: 'aGlX3fBg23kkFRV0EosTzlkU',
+        placeholder: '说些什么...'
+    });
 </script>
 
-<div id="disqus_thread">
-    
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
     </div>
 </div>
 </div>
@@ -271,7 +274,7 @@
                 <div>
                     
                     <figure class="image is-128x128 has-mb-6">
-                        <img class="" src="/images/avatar.png" alt="雪村唯">
+                        <img class="" src="/images/gen1.svg" alt="雪村唯">
                     </figure>
                     
                     <p class="is-size-4 is-block">
@@ -354,6 +357,26 @@
 </div>
     
         
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    目录
+                </h3>
+                <ul class="menu-list"><li>
+        <a class="is-flex" href="#Mac电脑下C-环境报错处理">
+        <span class="has-mr-6">1</span>
+        <span>Mac电脑下C++环境报错处理</span>
+        </a></li><li>
+        <a class="is-flex" href="#解决办法">
+        <span class="has-mr-6">2</span>
+        <span>解决办法</span>
+        </a></li></ul>
+            </div>
+        </div>
+    </div>
+
     
         <div class="card widget">
     <div class="card-content">
@@ -380,102 +403,21 @@
 </div>
 
     
-        
-<div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                分类
-            </h3>
-            <ul class="menu-list">
-            
-            </ul>
-        </div>
-    </div>
-</div>
-    
-        <div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                标签
-            </h3>
-            <div class="field is-grouped is-grouped-multiline">
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/Computer/">
-                        <span class="tag">Computer</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/Computer-Network/">
-                        <span class="tag">Computer Network</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/Life/">
-                        <span class="tag">Life</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/Python/">
-                        <span class="tag">Python</span>
-                        <span class="tag is-grey">3</span>
-                    </a>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</div>
-    
     
         <div class="column-right-shadow is-hidden-widescreen ">
         
             <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            最新文章
+            推荐阅读
         </h3>
         
         <article class="media">
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-29T05:01:32.000Z">2019-10-29</time></div>
-                    <a href="/2019/10/29/Mac%E7%94%B5%E8%84%91%E4%B8%8BC-%E7%8E%AF%E5%A2%83%E6%8A%A5%E9%94%99%E5%A4%84%E7%90%86/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Mac电脑下C++环境报错处理</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T07:55:04.000Z">2019-10-24</time></div>
-                    <a href="/2019/10/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" class="title has-link-black-ter is-size-6 has-text-weight-normal">计算机网络知识点总结</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T02:11:53.000Z">2019-10-24</time></div>
-                    <a href="/2019/10/24/03-Python%E5%AD%97%E7%AC%A6%E4%B8%B2-%E5%8F%98%E9%87%8F/" class="title has-link-black-ter is-size-6 has-text-weight-normal">03-Python字符串+变量</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T01:42:37.000Z">2019-10-24</time></div>
+                    <a href="/2019/10/24/01-Python%E5%9F%BA%E7%A1%80/" class="title has-link-black-ter is-size-6 has-text-weight-normal">01-Python基础</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -500,8 +442,8 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T01:42:37.000Z">2019-10-24</time></div>
-                    <a href="/2019/10/24/01-Python%E5%9F%BA%E7%A1%80/" class="title has-link-black-ter is-size-6 has-text-weight-normal">01-Python基础</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T02:11:53.000Z">2019-10-24</time></div>
+                    <a href="/2019/10/24/03-Python%E5%AD%97%E7%AC%A6%E4%B8%B2-%E5%8F%98%E9%87%8F/" class="title has-link-black-ter is-size-6 has-text-weight-normal">03-Python字符串+变量</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -509,30 +451,32 @@
             </div>
         </article>
         
-    </div>
-</div>
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T00:12:47.000Z">2019-10-24</time></div>
+                    <a href="/2019/10/24/Github-Page-%E7%A9%B7%E4%BA%BA%E7%9A%84%E6%9C%80%E5%A5%BD%E9%80%89%E6%8B%A9%EF%BC%88%E5%B9%B6%E4%B8%8D/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Github Page 穷人的最好选择（并不</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
         
-            <div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-        <h3 class="menu-label">
-            归档
-        </h3>
-        <ul class="menu-list">
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-29T05:01:32.000Z">2019-10-29</time></div>
+                    <a href="/2019/10/29/Mac%E7%94%B5%E8%84%91%E4%B8%8BC-%E7%8E%AF%E5%A2%83%E6%8A%A5%E9%94%99%E5%A4%84%E7%90%86/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Mac电脑下C++环境报错处理</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
         
-        <li>
-            <a class="level is-marginless" href="/archives/2019/10/">
-                <span class="level-start">
-                    <span class="level-item">十月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">6</span>
-                </span>
-            </a>
-        </li>
-        
-        </ul>
-        </div>
     </div>
 </div>
         
@@ -559,41 +503,15 @@
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            最新文章
+            推荐阅读
         </h3>
         
         <article class="media">
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-29T05:01:32.000Z">2019-10-29</time></div>
-                    <a href="/2019/10/29/Mac%E7%94%B5%E8%84%91%E4%B8%8BC-%E7%8E%AF%E5%A2%83%E6%8A%A5%E9%94%99%E5%A4%84%E7%90%86/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Mac电脑下C++环境报错处理</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T07:55:04.000Z">2019-10-24</time></div>
-                    <a href="/2019/10/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" class="title has-link-black-ter is-size-6 has-text-weight-normal">计算机网络知识点总结</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T02:11:53.000Z">2019-10-24</time></div>
-                    <a href="/2019/10/24/03-Python%E5%AD%97%E7%AC%A6%E4%B8%B2-%E5%8F%98%E9%87%8F/" class="title has-link-black-ter is-size-6 has-text-weight-normal">03-Python字符串+变量</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T01:42:37.000Z">2019-10-24</time></div>
+                    <a href="/2019/10/24/01-Python%E5%9F%BA%E7%A1%80/" class="title has-link-black-ter is-size-6 has-text-weight-normal">01-Python基础</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -618,8 +536,8 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T01:42:37.000Z">2019-10-24</time></div>
-                    <a href="/2019/10/24/01-Python%E5%9F%BA%E7%A1%80/" class="title has-link-black-ter is-size-6 has-text-weight-normal">01-Python基础</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T02:11:53.000Z">2019-10-24</time></div>
+                    <a href="/2019/10/24/03-Python%E5%AD%97%E7%AC%A6%E4%B8%B2-%E5%8F%98%E9%87%8F/" class="title has-link-black-ter is-size-6 has-text-weight-normal">03-Python字符串+变量</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -627,30 +545,32 @@
             </div>
         </article>
         
-    </div>
-</div>
-    
-        <div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-        <h3 class="menu-label">
-            归档
-        </h3>
-        <ul class="menu-list">
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T00:12:47.000Z">2019-10-24</time></div>
+                    <a href="/2019/10/24/Github-Page-%E7%A9%B7%E4%BA%BA%E7%9A%84%E6%9C%80%E5%A5%BD%E9%80%89%E6%8B%A9%EF%BC%88%E5%B9%B6%E4%B8%8D/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Github Page 穷人的最好选择（并不</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
         
-        <li>
-            <a class="level is-marginless" href="/archives/2019/10/">
-                <span class="level-start">
-                    <span class="level-item">十月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">6</span>
-                </span>
-            </a>
-        </li>
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-29T05:01:32.000Z">2019-10-29</time></div>
+                    <a href="/2019/10/29/Mac%E7%94%B5%E8%84%91%E4%B8%8BC-%E7%8E%AF%E5%A2%83%E6%8A%A5%E9%94%99%E5%A4%84%E7%90%86/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Mac电脑下C++环境报错处理</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
         
-        </ul>
-        </div>
     </div>
 </div>
     

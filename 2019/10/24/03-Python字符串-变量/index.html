@@ -27,6 +27,8 @@
 
 
 
+<link rel="alternative" href="/atom.xml" title="03-Python字符串+变量" type="application/atom+xml">
+
 
 
 <link rel="icon" href="/images/gen.svg">
@@ -164,16 +166,16 @@
 <li>在字符串中，一旦出现反斜杠就要加倍小心，可能有转义字符出现</li>
 <li>不同的系统对换行有不同的表示<ul>
 <li>Windows： \n</li>
-<li>Linux： \r\n<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s = &quot;i love you&quot;</span><br><span class="line">print(s)</span><br></pre></td></tr></table></figure>
-运行结果为：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">i love you</span><br></pre></td></tr></table></figure>
+<li>Linux： \r\n<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s = &quot;i love you&quot;</span><br><span class="line">print(s)</span><br></pre></td></tr></table></figure>
+运行结果为：<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">i love you</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"># 如果想表示出Let‘s go来</span><br><span class="line"># 1. 可以使用嵌套引号，即外层使用双引号</span><br><span class="line"># 2. 转义字符</span><br><span class="line">s = &quot;Let&apos;s go&quot;</span><br><span class="line">print(s)</span><br><span class="line"></span><br><span class="line">#\&apos; == &apos;</span><br><span class="line">ss = &apos;Let\&apos;s go&apos;</span><br><span class="line">print(ss)</span><br><span class="line"></span><br><span class="line"># \\ = \</span><br><span class="line">sss = &quot;c:\\user&quot;</span><br><span class="line">print(sss)</span><br><span class="line"></span><br><span class="line"># 回车换行符</span><br><span class="line">s1 = &quot;I love \r\n you&quot;</span><br><span class="line">print(s1)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"># 如果想表示出Let‘s go来</span><br><span class="line"># 1. 可以使用嵌套引号，即外层使用双引号</span><br><span class="line"># 2. 转义字符</span><br><span class="line">s = &quot;Let&apos;s go&quot;</span><br><span class="line">print(s)</span><br><span class="line"></span><br><span class="line">#\&apos; == &apos;</span><br><span class="line">ss = &apos;Let\&apos;s go&apos;</span><br><span class="line">print(ss)</span><br><span class="line"></span><br><span class="line"># \\ = \</span><br><span class="line">sss = &quot;c:\\user&quot;</span><br><span class="line">print(sss)</span><br><span class="line"></span><br><span class="line"># 回车换行符</span><br><span class="line">s1 = &quot;I love \r\n you&quot;</span><br><span class="line">print(s1)</span><br></pre></td></tr></table></figure>
 <p>运行结果为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Let&apos;s go</span><br><span class="line">Let&apos;s go</span><br><span class="line">c:\user</span><br><span class="line">I love </span><br><span class="line"> you</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Let&apos;s go</span><br><span class="line">Let&apos;s go</span><br><span class="line">c:\user</span><br><span class="line">I love </span><br><span class="line"> you</span><br></pre></td></tr></table></figure>
 
 <h2 id="字符串的格式化"><a href="#字符串的格式化" class="headerlink" title="字符串的格式化"></a>字符串的格式化</h2><ul>
 <li>把字符串按照一定格式打印或者填充</li>
@@ -186,22 +188,22 @@
 <h3 id="利用百分号格式化"><a href="#利用百分号格式化" class="headerlink" title="利用百分号格式化"></a>利用百分号格式化</h3><ul>
 <li>在字符串中，利用%表示一个特殊的含义，表示对字符串进行格式化</li>
 <li>%d：此处应该放入一个整数</li>
-<li>%s：此处应该放入一个字符串<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">s = &quot;I love %s&quot;</span><br><span class="line"># 下面打印，直接把%s作为字符串的一个内容打印出来</span><br><span class="line">print(s)</span><br></pre></td></tr></table></figure>
-运行结果：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">I love %s</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(&quot;I love %s&quot;%&quot;you&quot;)</span><br></pre></td></tr></table></figure>
-运行结果：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">I love you</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">s = &quot;I am %d years old&quot;</span><br><span class="line"># 留意下面两句话的区别和结果</span><br><span class="line">print(s)</span><br><span class="line">print(s%18)</span><br></pre></td></tr></table></figure>
-运行结果：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">I am %d years old</span><br><span class="line">I am 18 years old</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">s = &quot;I am %s, i am %d years old&quot;</span><br><span class="line">print(s)</span><br><span class="line"># 注意以下表达的出错原因</span><br><span class="line"># 如果字符串中由占位符，则由几个占位符必须用几个实际内容代替，或者一个也不要</span><br><span class="line">#print(s%&quot;a&quot;)</span><br><span class="line"># 如果出现多个占位符，则相应内容需要用括号括起来</span><br><span class="line">print(s%(&quot;a&quot;, 18))</span><br></pre></td></tr></table></figure>
-运行结果：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">I am %s, i am %d years old</span><br><span class="line">I am a, i am 18 years old</span><br></pre></td></tr></table></figure>
+<li>%s：此处应该放入一个字符串<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">s = &quot;I love %s&quot;</span><br><span class="line"># 下面打印，直接把%s作为字符串的一个内容打印出来</span><br><span class="line">print(s)</span><br></pre></td></tr></table></figure>
+运行结果：<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">I love %s</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(&quot;I love %s&quot;%&quot;you&quot;)</span><br></pre></td></tr></table></figure>
+运行结果：<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">I love you</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">s = &quot;I am %d years old&quot;</span><br><span class="line"># 留意下面两句话的区别和结果</span><br><span class="line">print(s)</span><br><span class="line">print(s%18)</span><br></pre></td></tr></table></figure>
+运行结果：<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">I am %d years old</span><br><span class="line">I am 18 years old</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">s = &quot;I am %s, i am %d years old&quot;</span><br><span class="line">print(s)</span><br><span class="line"># 注意以下表达的出错原因</span><br><span class="line"># 如果字符串中由占位符，则由几个占位符必须用几个实际内容代替，或者一个也不要</span><br><span class="line">#print(s%&quot;a&quot;)</span><br><span class="line"># 如果出现多个占位符，则相应内容需要用括号括起来</span><br><span class="line">print(s%(&quot;a&quot;, 18))</span><br></pre></td></tr></table></figure>
+运行结果：<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">I am %s, i am %d years old</span><br><span class="line">I am a, i am 18 years old</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
 <h3 id="format函数格式化字符串"><a href="#format函数格式化字符串" class="headerlink" title="format函数格式化字符串"></a>format函数格式化字符串</h3><ul>
 <li>直接使用format函数进行格式化</li>
 <li>推荐使用这种方法</li>
-<li>在使用上，以{}和：代替%号，后面用format带参数完成<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">s = &quot;I love &#123;&#125;&quot;.format(&quot;you&quot;)</span><br><span class="line">print(s)</span><br><span class="line">s = &quot;Yes, i am &#123;1&#125; years old, I love &#123;0&#125; and i am &#123;1&#125; years old&quot;.format(&quot;ABC&quot;, 18)</span><br><span class="line">print(s)</span><br></pre></td></tr></table></figure>
-运行结果：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">I love you</span><br><span class="line">Yes, i am 18 years old, I love ABC and i am 18 years old</span><br></pre></td></tr></table></figure>
+<li>在使用上，以{}和：代替%号，后面用format带参数完成<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">s = &quot;I love &#123;&#125;&quot;.format(&quot;you&quot;)</span><br><span class="line">print(s)</span><br><span class="line">s = &quot;Yes, i am &#123;1&#125; years old, I love &#123;0&#125; and i am &#123;1&#125; years old&quot;.format(&quot;ABC&quot;, 18)</span><br><span class="line">print(s)</span><br></pre></td></tr></table></figure>
+运行结果：<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">I love you</span><br><span class="line">Yes, i am 18 years old, I love ABC and i am 18 years old</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
@@ -229,18 +231,18 @@
 </ul>
 </li>
 <li>进行算数运算的符号</li>
-<li>python没有自增自减运算符<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"># +,-跟正常算术运算符一模一样</span><br><span class="line">a = 9+3-2</span><br><span class="line">print(a)</span><br><span class="line"># 乘号用星号(*)代替</span><br><span class="line">a = 9 * 4</span><br><span class="line">print(a)</span><br><span class="line"># 除号用斜杠(/)代替</span><br><span class="line"># 在Python2.x 和python3.x 中，除号(/)结果可能不一致，此处以3系列为准</span><br><span class="line">a = 9/4</span><br><span class="line">print(a)</span><br><span class="line"># % 取余运算</span><br><span class="line"># 两个数字相除应该有商数有余数</span><br><span class="line"># % 只会得到余数</span><br><span class="line">a = 9 % 4</span><br><span class="line">print(a)</span><br><span class="line"># // 表示取商运算，也叫地板除</span><br><span class="line">a = 9 // 4</span><br><span class="line">print(a)</span><br><span class="line"># ** 表示幂运算</span><br><span class="line">a = 9 ** 4</span><br><span class="line">print(a)</span><br><span class="line">a = 3 ** 3</span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
-运行结果：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">10</span><br><span class="line">36</span><br><span class="line">2.25</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">6561</span><br><span class="line">27</span><br></pre></td></tr></table></figure>
+<li>python没有自增自减运算符<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"># +,-跟正常算术运算符一模一样</span><br><span class="line">a = 9+3-2</span><br><span class="line">print(a)</span><br><span class="line"># 乘号用星号(*)代替</span><br><span class="line">a = 9 * 4</span><br><span class="line">print(a)</span><br><span class="line"># 除号用斜杠(/)代替</span><br><span class="line"># 在Python2.x 和python3.x 中，除号(/)结果可能不一致，此处以3系列为准</span><br><span class="line">a = 9/4</span><br><span class="line">print(a)</span><br><span class="line"># % 取余运算</span><br><span class="line"># 两个数字相除应该有商数有余数</span><br><span class="line"># % 只会得到余数</span><br><span class="line">a = 9 % 4</span><br><span class="line">print(a)</span><br><span class="line"># // 表示取商运算，也叫地板除</span><br><span class="line">a = 9 // 4</span><br><span class="line">print(a)</span><br><span class="line"># ** 表示幂运算</span><br><span class="line">a = 9 ** 4</span><br><span class="line">print(a)</span><br><span class="line">a = 3 ** 3</span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
+运行结果：<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">10</span><br><span class="line">36</span><br><span class="line">2.25</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">6561</span><br><span class="line">27</span><br></pre></td></tr></table></figure>
 <h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3></li>
 <li>对两个变量或者值进行比较的运算符</li>
-<li>对于比较结果是布尔值<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># == , 等于号</span><br><span class="line">a = 3 ** 4</span><br><span class="line"># 下面语句执行书序是</span><br><span class="line"># 1， 计算 a == 80</span><br><span class="line"># 2. 把结果放入b中</span><br><span class="line">b = a == 80</span><br><span class="line">print(b)</span><br><span class="line"># != 不等于</span><br><span class="line">print( 9 != 8 )</span><br><span class="line"># &gt; 大于</span><br><span class="line"># &lt; 小于</span><br><span class="line"># &gt;= 大于等于</span><br><span class="line"># &lt;= 小于等于</span><br></pre></td></tr></table></figure>
-运行结果:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">False</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
+<li>对于比较结果是布尔值<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># == , 等于号</span><br><span class="line">a = 3 ** 4</span><br><span class="line"># 下面语句执行书序是</span><br><span class="line"># 1， 计算 a == 80</span><br><span class="line"># 2. 把结果放入b中</span><br><span class="line">b = a == 80</span><br><span class="line">print(b)</span><br><span class="line"># != 不等于</span><br><span class="line">print( 9 != 8 )</span><br><span class="line"># &gt; 大于</span><br><span class="line"># &lt; 小于</span><br><span class="line"># &gt;= 大于等于</span><br><span class="line"># &lt;= 小于等于</span><br></pre></td></tr></table></figure>
+运行结果:<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">False</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
-<h3 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># = , 赋值</span><br><span class="line">a = 0</span><br><span class="line">c = a = 4</span><br><span class="line"></span><br><span class="line"># +=, 是缩写，</span><br><span class="line">a = 0</span><br><span class="line">a += 7 # a = a+ 7 的缩写</span><br><span class="line">print(a)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 所有数学运算符都有缩写形式</span><br><span class="line"># -=， ×=， /=, //=, %=, **=,都是缩写形式</span><br></pre></td></tr></table></figure>
+<h3 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h3><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># = , 赋值</span><br><span class="line">a = 0</span><br><span class="line">c = a = 4</span><br><span class="line"></span><br><span class="line"># +=, 是缩写，</span><br><span class="line">a = 0</span><br><span class="line">a += 7 # a = a+ 7 的缩写</span><br><span class="line">print(a)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 所有数学运算符都有缩写形式</span><br><span class="line"># -=， ×=， /=, //=, %=, **=,都是缩写形式</span><br></pre></td></tr></table></figure>
 <p>运行结果：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">7</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">7</span><br></pre></td></tr></table></figure>
 
 <h2 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h2><ul>
 <li>对布尔值进行计算的符号</li>
@@ -256,17 +258,17 @@
 </ul>
 </li>
 <li>逻辑运算的短路问题<ul>
-<li>逻辑运算式，按照运算顺序计算，一旦能够确定整个式子未来的值，则不再进行计算，直接返回<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 逻辑运算符案例</span><br><span class="line">a = True</span><br><span class="line">b = False</span><br><span class="line">c = True</span><br><span class="line"># 以下式子等价于 d = 1 * 0 + 1</span><br><span class="line">d = a and b or c</span><br><span class="line">print(d)</span><br><span class="line">d = a or b and a</span><br><span class="line">print(d)</span><br></pre></td></tr></table></figure>
-运行结果：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">True</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 逻辑运算的短路案例</span><br><span class="line"># 下面的逻辑表达式，a的值一定是True，则运行到or的时候，整个表达式不在向下计算</span><br><span class="line">a = True or xxxxxxxxxxx</span><br><span class="line"># 下面表达式，如果xxx中包含赋值表达式，则结果很难预期</span><br><span class="line"># 代码示例（伪代码)</span><br><span class="line">b = 0</span><br><span class="line">a = a or (b=9) and 6</span><br><span class="line"># 假定上面表达式如果没有语法错误</span><br><span class="line"># 则b最终的值应该是0而不是9</span><br><span class="line">print(b)</span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
-运行结果：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> File &quot;&lt;ipython-input-43-bb4253784911&gt;&quot;, line 9</span><br><span class="line">    a = a or (b=9) and 6</span><br><span class="line">               ^</span><br><span class="line">SyntaxError: invalid syntax</span><br></pre></td></tr></table></figure>
+<li>逻辑运算式，按照运算顺序计算，一旦能够确定整个式子未来的值，则不再进行计算，直接返回<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 逻辑运算符案例</span><br><span class="line">a = True</span><br><span class="line">b = False</span><br><span class="line">c = True</span><br><span class="line"># 以下式子等价于 d = 1 * 0 + 1</span><br><span class="line">d = a and b or c</span><br><span class="line">print(d)</span><br><span class="line">d = a or b and a</span><br><span class="line">print(d)</span><br></pre></td></tr></table></figure>
+运行结果：<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">True</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 逻辑运算的短路案例</span><br><span class="line"># 下面的逻辑表达式，a的值一定是True，则运行到or的时候，整个表达式不在向下计算</span><br><span class="line">a = True or xxxxxxxxxxx</span><br><span class="line"># 下面表达式，如果xxx中包含赋值表达式，则结果很难预期</span><br><span class="line"># 代码示例（伪代码)</span><br><span class="line">b = 0</span><br><span class="line">a = a or (b=9) and 6</span><br><span class="line"># 假定上面表达式如果没有语法错误</span><br><span class="line"># 则b最终的值应该是0而不是9</span><br><span class="line">print(b)</span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
+运行结果：<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> File &quot;&lt;ipython-input-43-bb4253784911&gt;&quot;, line 9</span><br><span class="line">    a = a or (b=9) and 6</span><br><span class="line">               ^</span><br><span class="line">SyntaxError: invalid syntax</span><br></pre></td></tr></table></figure>
 <h2 id="成员运算符号"><a href="#成员运算符号" class="headerlink" title="成员运算符号"></a>成员运算符号</h2></li>
 </ul>
 </li>
 <li>用来检测某一个变量是否是另一个变量的成员</li>
 <li>in</li>
-<li>not in<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 案例</span><br><span class="line">l = [1,2,3,4,5]</span><br><span class="line">a = 7</span><br><span class="line">b = a in l</span><br><span class="line">print(b)</span><br><span class="line">a = 4</span><br><span class="line">print(a in l)</span><br><span class="line">print(a not in l)</span><br></pre></td></tr></table></figure>
-运行结果：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">False</span><br><span class="line">True</span><br><span class="line">False</span><br></pre></td></tr></table></figure>
+<li>not in<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 案例</span><br><span class="line">l = [1,2,3,4,5]</span><br><span class="line">a = 7</span><br><span class="line">b = a in l</span><br><span class="line">print(b)</span><br><span class="line">a = 4</span><br><span class="line">print(a in l)</span><br><span class="line">print(a not in l)</span><br></pre></td></tr></table></figure>
+运行结果：<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">False</span><br><span class="line">True</span><br><span class="line">False</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
@@ -275,14 +277,14 @@
 <li>语法就是 var1 is var2</li>
 </ul>
 </li>
-<li>is not: 两个变量不是同一个变量<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a = 9</span><br><span class="line">b = 9</span><br><span class="line">print( a is b)</span><br><span class="line">a = &quot;I love you&quot;</span><br><span class="line">b = &quot;I love you&quot;</span><br><span class="line">print( a is b)</span><br></pre></td></tr></table></figure>
-运算结果：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">True</span><br><span class="line">False</span><br></pre></td></tr></table></figure>
+<li>is not: 两个变量不是同一个变量<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a = 9</span><br><span class="line">b = 9</span><br><span class="line">print( a is b)</span><br><span class="line">a = &quot;I love you&quot;</span><br><span class="line">b = &quot;I love you&quot;</span><br><span class="line">print( a is b)</span><br></pre></td></tr></table></figure>
+运算结果：<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">True</span><br><span class="line">False</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
 <h2 id="运算符优先级问题"><a href="#运算符优先级问题" class="headerlink" title="运算符优先级问题"></a>运算符优先级问题</h2><ul>
 <li>永远记住，括号具有最高优先级</li>
-<li>优先级表格<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">**  指数 (最高优先级)</span><br><span class="line">~ + -   按位翻转, 一元加号和减号 (最后两个的方法名为 +@ 和 -@)</span><br><span class="line">* / % //    乘，除，取模和取整除</span><br><span class="line">+ - 加法减法</span><br><span class="line">&gt;&gt; &lt;&lt;   右移，左移运算符</span><br><span class="line">&amp;   位 &apos;AND&apos;</span><br><span class="line">^ | 位运算符</span><br><span class="line">&lt;= &lt; &gt; &gt;=   比较运算符</span><br><span class="line">&lt;&gt; == !=    等于运算符</span><br><span class="line">= %= /= //= -= += *= **=    赋值运算符</span><br><span class="line">is is not   身份运算符</span><br><span class="line">in not in   成员运算符</span><br><span class="line">not or and  逻辑运算符</span><br></pre></td></tr></table></figure>
+<li>优先级表格<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">**  指数 (最高优先级)</span><br><span class="line">~ + -   按位翻转, 一元加号和减号 (最后两个的方法名为 +@ 和 -@)</span><br><span class="line">* / % //    乘，除，取模和取整除</span><br><span class="line">+ - 加法减法</span><br><span class="line">&gt;&gt; &lt;&lt;   右移，左移运算符</span><br><span class="line">&amp;   位 &apos;AND&apos;</span><br><span class="line">^ | 位运算符</span><br><span class="line">&lt;= &lt; &gt; &gt;=   比较运算符</span><br><span class="line">&lt;&gt; == !=    等于运算符</span><br><span class="line">= %= /= //= -= += *= **=    赋值运算符</span><br><span class="line">is is not   身份运算符</span><br><span class="line">in not in   成员运算符</span><br><span class="line">not or and  逻辑运算符</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
@@ -372,23 +374,20 @@
     <div class="card-content">
         <h3 class="title is-5 has-text-weight-normal">评论</h3>
         
+<div id="valine-thread" class="content"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 <script>
-    var disqus_config = function () {
-        this.page.url = 'https://deepsnow.top/2019/10/24/03-Python%E5%AD%97%E7%AC%A6%E4%B8%B2-%E5%8F%98%E9%87%8F/';
-        this.page.identifier = '2019/10/24/03-Python字符串-变量/';
-    };
-    (function() {
-        var d = document, s = d.createElement('script');  
-        s.src = '//' + '不能为空' + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
+    new Valine({
+        el: '#valine-thread' ,
+        notify: true,
+        verify: true,
+        app_id: 'TND7eL9lxXF8Cd3TeWShhYq1-gzGzoHsz',
+        app_key: 'aGlX3fBg23kkFRV0EosTzlkU',
+        placeholder: '说些什么...'
+    });
 </script>
 
-<div id="disqus_thread">
-    
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
     </div>
 </div>
 </div>
@@ -407,7 +406,7 @@
                 <div>
                     
                     <figure class="image is-128x128 has-mb-6">
-                        <img class="" src="/images/avatar.png" alt="雪村唯">
+                        <img class="" src="/images/gen1.svg" alt="雪村唯">
                     </figure>
                     
                     <p class="is-size-4 is-block">
@@ -516,102 +515,21 @@
 </div>
 
     
-        
-<div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                分类
-            </h3>
-            <ul class="menu-list">
-            
-            </ul>
-        </div>
-    </div>
-</div>
-    
-        <div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                标签
-            </h3>
-            <div class="field is-grouped is-grouped-multiline">
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/Computer/">
-                        <span class="tag">Computer</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/Computer-Network/">
-                        <span class="tag">Computer Network</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/Life/">
-                        <span class="tag">Life</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/Python/">
-                        <span class="tag">Python</span>
-                        <span class="tag is-grey">3</span>
-                    </a>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</div>
-    
     
         <div class="column-right-shadow is-hidden-widescreen ">
         
             <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            最新文章
+            推荐阅读
         </h3>
         
         <article class="media">
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-29T05:01:32.000Z">2019-10-29</time></div>
-                    <a href="/2019/10/29/Mac%E7%94%B5%E8%84%91%E4%B8%8BC-%E7%8E%AF%E5%A2%83%E6%8A%A5%E9%94%99%E5%A4%84%E7%90%86/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Mac电脑下C++环境报错处理</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T07:55:04.000Z">2019-10-24</time></div>
-                    <a href="/2019/10/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" class="title has-link-black-ter is-size-6 has-text-weight-normal">计算机网络知识点总结</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T02:11:53.000Z">2019-10-24</time></div>
-                    <a href="/2019/10/24/03-Python%E5%AD%97%E7%AC%A6%E4%B8%B2-%E5%8F%98%E9%87%8F/" class="title has-link-black-ter is-size-6 has-text-weight-normal">03-Python字符串+变量</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T01:42:37.000Z">2019-10-24</time></div>
+                    <a href="/2019/10/24/01-Python%E5%9F%BA%E7%A1%80/" class="title has-link-black-ter is-size-6 has-text-weight-normal">01-Python基础</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -636,8 +554,8 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T01:42:37.000Z">2019-10-24</time></div>
-                    <a href="/2019/10/24/01-Python%E5%9F%BA%E7%A1%80/" class="title has-link-black-ter is-size-6 has-text-weight-normal">01-Python基础</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T02:11:53.000Z">2019-10-24</time></div>
+                    <a href="/2019/10/24/03-Python%E5%AD%97%E7%AC%A6%E4%B8%B2-%E5%8F%98%E9%87%8F/" class="title has-link-black-ter is-size-6 has-text-weight-normal">03-Python字符串+变量</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -645,30 +563,32 @@
             </div>
         </article>
         
-    </div>
-</div>
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T00:12:47.000Z">2019-10-24</time></div>
+                    <a href="/2019/10/24/Github-Page-%E7%A9%B7%E4%BA%BA%E7%9A%84%E6%9C%80%E5%A5%BD%E9%80%89%E6%8B%A9%EF%BC%88%E5%B9%B6%E4%B8%8D/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Github Page 穷人的最好选择（并不</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
         
-            <div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-        <h3 class="menu-label">
-            归档
-        </h3>
-        <ul class="menu-list">
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-29T05:01:32.000Z">2019-10-29</time></div>
+                    <a href="/2019/10/29/Mac%E7%94%B5%E8%84%91%E4%B8%8BC-%E7%8E%AF%E5%A2%83%E6%8A%A5%E9%94%99%E5%A4%84%E7%90%86/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Mac电脑下C++环境报错处理</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
         
-        <li>
-            <a class="level is-marginless" href="/archives/2019/10/">
-                <span class="level-start">
-                    <span class="level-item">十月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">6</span>
-                </span>
-            </a>
-        </li>
-        
-        </ul>
-        </div>
     </div>
 </div>
         
@@ -695,41 +615,15 @@
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            最新文章
+            推荐阅读
         </h3>
         
         <article class="media">
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-29T05:01:32.000Z">2019-10-29</time></div>
-                    <a href="/2019/10/29/Mac%E7%94%B5%E8%84%91%E4%B8%8BC-%E7%8E%AF%E5%A2%83%E6%8A%A5%E9%94%99%E5%A4%84%E7%90%86/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Mac电脑下C++环境报错处理</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T07:55:04.000Z">2019-10-24</time></div>
-                    <a href="/2019/10/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" class="title has-link-black-ter is-size-6 has-text-weight-normal">计算机网络知识点总结</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T02:11:53.000Z">2019-10-24</time></div>
-                    <a href="/2019/10/24/03-Python%E5%AD%97%E7%AC%A6%E4%B8%B2-%E5%8F%98%E9%87%8F/" class="title has-link-black-ter is-size-6 has-text-weight-normal">03-Python字符串+变量</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T01:42:37.000Z">2019-10-24</time></div>
+                    <a href="/2019/10/24/01-Python%E5%9F%BA%E7%A1%80/" class="title has-link-black-ter is-size-6 has-text-weight-normal">01-Python基础</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -754,8 +648,8 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T01:42:37.000Z">2019-10-24</time></div>
-                    <a href="/2019/10/24/01-Python%E5%9F%BA%E7%A1%80/" class="title has-link-black-ter is-size-6 has-text-weight-normal">01-Python基础</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T02:11:53.000Z">2019-10-24</time></div>
+                    <a href="/2019/10/24/03-Python%E5%AD%97%E7%AC%A6%E4%B8%B2-%E5%8F%98%E9%87%8F/" class="title has-link-black-ter is-size-6 has-text-weight-normal">03-Python字符串+变量</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -763,30 +657,32 @@
             </div>
         </article>
         
-    </div>
-</div>
-    
-        <div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-        <h3 class="menu-label">
-            归档
-        </h3>
-        <ul class="menu-list">
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T00:12:47.000Z">2019-10-24</time></div>
+                    <a href="/2019/10/24/Github-Page-%E7%A9%B7%E4%BA%BA%E7%9A%84%E6%9C%80%E5%A5%BD%E9%80%89%E6%8B%A9%EF%BC%88%E5%B9%B6%E4%B8%8D/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Github Page 穷人的最好选择（并不</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
         
-        <li>
-            <a class="level is-marginless" href="/archives/2019/10/">
-                <span class="level-start">
-                    <span class="level-item">十月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">6</span>
-                </span>
-            </a>
-        </li>
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-29T05:01:32.000Z">2019-10-29</time></div>
+                    <a href="/2019/10/29/Mac%E7%94%B5%E8%84%91%E4%B8%8BC-%E7%8E%AF%E5%A2%83%E6%8A%A5%E9%94%99%E5%A4%84%E7%90%86/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Mac电脑下C++环境报错处理</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
         
-        </ul>
-        </div>
     </div>
 </div>
     
